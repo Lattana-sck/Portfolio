@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body {
+  font-family: "Oswald", sans-serif !important;
+}
+/******************* NAVBAR *********************/ 
+nav {
+  z-index: 2;
+}
+.logo{
+  width: 10rem;
+}
+/*************** MENU LINKS ********************/
+
+nav a.nav-link{
+  font-weight : 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: black !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+   border-bottom: 0.1875rem solid darkgrey;
+}
+
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1875rem solid darkgrey;
+}
+
+/******************* HEADER *********************/ 
+
+.header-wraper {
+  position: relative;
+  background: url('background.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: White;
+  text-transform: uppercase;
+}
+
+
+/******************* Typed - text  *********************/ 
+
+.typed-text {
+  font-size: 5rem;
+  color: white;
+}
+
+/******************* HEADER MAIN OFFER BUTTON  *********************/ 
+
+.btn-main-offer {
+  border : 1px solid black;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+}
+
+/******************* PARTICLES JS  *********************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+
+}
+
+@media (max-width: 768px){
+  .tsparticles-canvas-el {
+    display: none;
+  }
+}
+
+/******************* A PROPOS DE MOI *********************/ 
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid black;
+}
+
+.about-heading {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+@media (max-width: 468px){
+  .profile-img {
+    width: 10rem;
+  }
+}
+
+/*************** FORMATION & EXPERIENCE ********************/
+
+.formation {
+  padding: 0.7rem ;
+  background-color: #f8f9fa;
+}
+.formation-wrapper {
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+
+.formation h1 {
+  text-transform: uppercase;
+  color: black;
+}
+
+.formation-wrapper::before{
+  position: absolute;
+  content:"";
+  top: 0;
+  left:50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background-color: grey;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+  text-align:left;
+}
+
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+  text-align: right;
+}
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: grey;
+  margin-top: 0.625rem;
+  z-index: 1;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: black;
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: black;
+  font-weight: 900;
+}
+
+.experience {
+  padding: 0.7rem ;
+}
+
+.experience-wrapper {
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+
+.fexperience h1 {
+  text-transform: uppercase;
+  color: black;
+}
+
+.experience-wrapper::before{
+  position: absolute;
+  content:"";
+  top: 0;
+  left:50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background-color: grey;
+  z-index: 1;
+}
+/**************** MEDIA ************/
+
+@media(max-width: 768px){
+  .formation .container {
+    padding-left: 0;
+  }
+  .formation-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+  .timeline-block-left {
+    float: none;
+    width: 100%;
+    direction: ltr;
+    text-align: left;
+  }
+  .experience .container {
+    padding-left: 0;
+  }
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+/**************** PROJETS ************/
+
+.projet-wrapper {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.projet-image {
+  width: 20rem;
+  height: 15rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.projet-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 1rem;
+  width: 40% !important;
+}
+
+@media(max-width: 768px){
+  .projet-image {
+    width: 10rem;
+    height: 7.5rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+  }
+}
+
+/**************** OVERFLOW ************/
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  width: 20rem;
+  height: 15rem;
+  top: 0;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.projet-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.projet-icon {
+  position: absolute;
+  opacity: 0.5;
+  margin-left: 0;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.projet-image-box:hover .projet-icon:hover {
+  opacity: 80%;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;  
+}
+
+/**************** OVERFLOW BOX ************/
+
+.projet-image-popupbox {
+  width: 40rem;
+  border: 0.5px solid black;
+  border-radius: 5%;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: red !important;
+}
+.hyper-link:hover {
+  color: black !important;
+}
+/**************** COMPETENCES ************/
+
+.skill-logo {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.fab {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.fab:hover {
+  color:grey;
+}
+
+
+
+
+
+
+
+
+/**************** CONTACT FORM ************/
+
+.contact-form {
+  position: relative;
+  background: url('background-contact.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  padding-left: 5%;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.formulaire{
+  width: 50%;
+  position: absolute;
+  opacity: 0.95;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.bouton {
+  border: 1px solid white !important;
+  color: black;
+  border-radius: 10%;
+}
+
+.bouton:hover {
+  border: 2px solid grey !important;
+  border-radius: 10%;
+}
+
+.profile-img1 {
+    float:right;
+    width: 16rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    border: 1px solid black;
+}
+
+.img-box {
+  padding-right: 18%;
+}
