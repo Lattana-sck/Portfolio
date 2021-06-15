@@ -21,7 +21,7 @@ const openPopupboxFreeads = () => {
             <p>Le but de ce projet est de faire un site de petites annonces. <br />
                 Pouvoir éditer une annonce, consulter toutes les annonces, messagerie entre utilisateur...</p>
             <p>Langages / Framworks : PHP / Laravel / SQL</p>
-            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/FreeAds")} >https://github.com/Lattana-sck/FreeAds</a>/a>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/FreeAds")} >https://github.com/Lattana-sck/FreeAds</a>
         </>
     )
     PopupboxManager.open({ content })
