@@ -21,7 +21,7 @@ const openPopupboxFreeads = () => {
             <p>Le but de ce projet est de faire un site de petites annonces. <br />
                 Pouvoir éditer une annonce, consulter toutes les annonces, messagerie entre utilisateur...</p>
             <p>Langages / Framworks : PHP / Laravel / SQL</p>
-            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com")} >https://github.com</a>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/FreeAds")} >https://github.com/Lattana-sck/FreeAds</a>/a>
         </>
     )
     PopupboxManager.open({ content })
@@ -40,7 +40,7 @@ const openPopupboxPuissance4 = () => {
             <img className="projet-image-popupbox" src={puissance4} alt="Puissance4 projet" />
             <p>Le but de ce projet est de réaliser un jeu reprenant les règles du célèbre jeu de Puissance4 ...</p>
             <p>Langages / Framework : HTML / CSS / JS / JQUERY</p>
-            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com")} >https://github.com</a>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Puissance4")} >https://github.com/Lattana-sck/Puissance4</a>
         </>
     )
     PopupboxManager.open({ content })
@@ -60,7 +60,7 @@ const openPopupboxSnapchat = () => {
             <p>Le but de ce projet est de créer une application mobile qui envoie des images a vos amis pour un certain laps de temps, <br />
                 puis qui seront supprimés par la suite...</p>
             <p>Langages / Framework : React, React NATIVE, </p>
-            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com")} >https://github.com</a>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Snapchat")} >https://github.com/Lattana-sck/Snapchat</a>
             
            
         </>
@@ -82,7 +82,7 @@ const popupboxConfigSnapchat = {
                 fonctionnalités que twitter. <br />
                 Pouvoir (un)follow un autre utilisateur, poster des tweets ainsi que les retweeter...</p>
                         <p>Langages / Framwork : PHP / HTML / CSS / JS / SQL </p>
-                        <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com")} >https://github.com</a>
+                        <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Tweet-academie")} >https://github.com/Lattana-sck/Tweet-academie</a>
                     </>
     )
     PopupboxManager.open({content})
