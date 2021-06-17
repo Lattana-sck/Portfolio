@@ -7,7 +7,7 @@ import photo from "../photo.jpg";
         e.preventDefault();
         emailjs.sendForm('gmail', 'template_ewycfwd', e.target, 'user_lP8XPa7ygwpbW5v48kZ3K')
         window.alert('Votre email a été envoyé !');
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://lattana-sck.github.io/Portfolio/";
     }
 
 const Contact =
