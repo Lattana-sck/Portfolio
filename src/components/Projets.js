@@ -3,7 +3,7 @@ import freeads from '../projet-img/projet-freeads.png';
 import puissance4 from '../projet-img/projet-puissance4.png';
 import snapchat from '../projet-img/projet-snapchat.png';
 import tweetacademie from '../projet-img/projet-tweetacademie.png';
-
+import ecommerce from '../projet-img/projet-ecommerce.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -61,80 +61,104 @@ const openPopupboxSnapchat = () => {
                 puis qui seront supprimés par la suite...</p>
             <p>Langages / Framework : React, React NATIVE, </p>
             <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Snapchat")} >https://github.com/Lattana-sck/Snapchat</a>
-            
-           
+
+
         </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content })
 };
 
 const popupboxConfigSnapchat = {
-                        fadeIn: true,
+    fadeIn: true,
     fadeInSpeed: 500
 };
- // TWEETACADEMIE
- const openPopupboxTweetacademie = () => {
+// TWEETACADEMIE
+const openPopupboxTweetacademie = () => {
     const content = (
         <>
-                        <h3>Tweetacademie</h3>
-                        <img className="projet-image-popupbox" src={tweetacademie} alt="tweetacademie projet" />
-                        <p>Le but de ce projet est de créer un réseau social pour les étudiants de notre promotion, qui aura les mêmes
+            <h3>Tweetacademie</h3>
+            <img className="projet-image-popupbox" src={tweetacademie} alt="tweetacademie projet" />
+            <p>Le but de ce projet est de créer un réseau social pour les étudiants de notre promotion, qui aura les mêmes
                 fonctionnalités que twitter. <br />
                 Pouvoir (un)follow un autre utilisateur, poster des tweets ainsi que les retweeter...</p>
-                        <p>Langages / Framwork : PHP / HTML / CSS / JS / SQL </p>
-                        <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Tweet-academie")} >https://github.com/Lattana-sck/Tweet-academie</a>
-                    </>
+            <p>Langages / Framwork : PHP / HTML / CSS / JS / SQL </p>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Tweet-academie")} >https://github.com/Lattana-sck/Tweet-academie</a>
+        </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content })
 
 };
 
 const popupboxConfigTweetacademie = {
-                        fadeIn: true,
+    fadeIn: true,
     fadeInSpeed: 500
 };
-
+// ECOMMERCE
+const openPopupboxEcommerce = () => {
+    const content = (
+        <>
+            <h3>Ecommerce</h3>
+            <img className="projet-image-popupbox" src={ecommerce} alt="Ecommerce projet" />
+            <p>Le but de ce projet est de faire un site E-commerce <br />
+                Pouvoir consulter les produits, acheter sans se connecter, s'inscrire...</p>
+            <p>Langages / Framworks : Symfony / React</p>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Ecommerce")} >https://github.com/Lattana-sck/Ecommerce</a>
+        </>
+    )
+    PopupboxManager.open({ content })
+};
+const popupboxConfigEcommerce = {
+    fadeIn: true,
+    fadeInSpeed: 500
+};
 const Projets =
 
-        <div className="projet-wrapper">
-                        <div className="container">
-                            <h1 className="text-uppercase text-center py-5">Mes projets</h1>
+    <div className="projet-wrapper">
+        <div className="container">
+            <h1 className="text-uppercase text-center py-5">Mes projets</h1>
 
-                            <div className="image-box-wrapper row justify-content-center">
+            <div className="image-box-wrapper row justify-content-center">
 
-                                <div className="projet-image-box" onClick={openPopupboxFreeads}>
-                                    <img className="projet-image" src={freeads} alt="projet-freeads" />
-                                    <div className="overflow"></div>
-                                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
-                                </div>
+                <div className="projet-image-box" onClick={openPopupboxFreeads}>
+                    <img className="projet-image" src={freeads} alt="projet-freeads" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
 
 
-                                <div className="projet-image-box" onClick={openPopupboxPuissance4}>
-                                    <img className="projet-image" src={puissance4} alt="projet-puissance4" />
-                                    <div className="overflow"></div>
-                                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
-                                </div>
+                <div className="projet-image-box" onClick={openPopupboxPuissance4}>
+                    <img className="projet-image" src={puissance4} alt="projet-puissance4" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
 
-                                <div className="projet-image-box" onClick={openPopupboxSnapchat}>
-                                    <img className="projet-image" src={snapchat} alt="projet-snapchat" />
-                                    <div className="overflow"></div>
-                                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
-                                </div>
+                <div className="projet-image-box" onClick={openPopupboxSnapchat}>
+                    <img className="projet-image" src={snapchat} alt="projet-snapchat" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
 
-                                <div className="projet-image-box" onClick={openPopupboxTweetacademie}>
-                                    <img className="projet-image" src={tweetacademie} alt="projet-tweetacademie" />
-                                    <div className="overflow"></div>
-                                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
-                                </div>
+                <div className="projet-image-box" onClick={openPopupboxTweetacademie}>
+                    <img className="projet-image" src={tweetacademie} alt="projet-tweetacademie" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
 
-                            </div>
+                <div className="projet-image-box" onClick={openPopupboxEcommerce}>
+                    <img className="projet-image" src={ecommerce} alt="projet-Ecommerce" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
 
-                        </div>
-                        <PopupboxContainer {...popupboxConfigFreeads} />
-                        <PopupboxContainer {...popupboxConfigPuissance4} />
-                        <PopupboxContainer {...popupboxConfigSnapchat} />
-                        <PopupboxContainer {...popupboxConfigTweetacademie} />
-                    </div>
+            </div>
+
+        </div>
+        <PopupboxContainer {...popupboxConfigFreeads} />
+        <PopupboxContainer {...popupboxConfigPuissance4} />
+        <PopupboxContainer {...popupboxConfigSnapchat} />
+        <PopupboxContainer {...popupboxConfigTweetacademie} />
+        <PopupboxContainer {...popupboxConfigEcommerce} />
+    </div>
 
 
 
