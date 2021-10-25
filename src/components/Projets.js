@@ -2,8 +2,8 @@ import React from 'react';
 import freeads from '../projet-img/projet-freeads.png';
 import puissance4 from '../projet-img/projet-puissance4.png';
 import snapchat from '../projet-img/projet-snapchat.png';
-import tweetacademie from '../projet-img/projet-tweetacademie.png';
 import ecommerce from '../projet-img/projet-ecommerce.png';
+import previouslyon from '../projet-img/projet-previouslyon.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -72,27 +72,7 @@ const popupboxConfigSnapchat = {
     fadeIn: true,
     fadeInSpeed: 500
 };
-// TWEETACADEMIE
-const openPopupboxTweetacademie = () => {
-    const content = (
-        <>
-            <h3>Tweetacademie</h3>
-            <img className="projet-image-popupbox" src={tweetacademie} alt="tweetacademie projet" />
-            <p>Le but de ce projet est de créer un réseau social pour les étudiants de notre promotion, qui aura les mêmes
-                fonctionnalités que twitter. <br />
-                Pouvoir (un)follow un autre utilisateur, poster des tweets ainsi que les retweeter...</p>
-            <p>Langages / Framwork : PHP / HTML / CSS / JS / SQL </p>
-            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Tweet-academie")} >https://github.com/Lattana-sck/Tweet-academie</a>
-        </>
-    )
-    PopupboxManager.open({ content })
 
-};
-
-const popupboxConfigTweetacademie = {
-    fadeIn: true,
-    fadeInSpeed: 500
-};
 // ECOMMERCE
 const openPopupboxEcommerce = () => {
     const content = (
@@ -108,6 +88,26 @@ const openPopupboxEcommerce = () => {
     PopupboxManager.open({ content })
 };
 const popupboxConfigEcommerce = {
+    fadeIn: true,
+    fadeInSpeed: 500
+};
+
+// FREEADS
+const openPopupboxPreviouslyon = () => {
+    const content = (
+        <>
+            <h3>Previously On</h3>
+            <img className="projet-image-popupbox" src={previouslyon} alt="Previously_On projet" />
+            <p>Le but de ce projet est de créer une application de calendrier de série a partir d'une API.<br />
+                Pouvoir consulter les séries a voir ainsi que leurs saison/episodes, ajouter des séries en favoris, chatter entre membre du site etc.. </p>
+            <p>Langages / Framworks : Node.js / Next.js</p>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Previously_On")} >https://github.com/Lattana-sck/Previously_On</a>
+        </>
+    )
+    PopupboxManager.open({ content })
+};
+
+const popupboxConfigPreviouslyon = {
     fadeIn: true,
     fadeInSpeed: 500
 };
@@ -138,26 +138,25 @@ const Projets =
                     <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
                 </div>
 
-                <div className="projet-image-box" onClick={openPopupboxTweetacademie}>
-                    <img className="projet-image" src={tweetacademie} alt="projet-tweetacademie" />
-                    <div className="overflow"></div>
-                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
-                </div>
-
                 <div className="projet-image-box" onClick={openPopupboxEcommerce}>
                     <img className="projet-image" src={ecommerce} alt="projet-Ecommerce" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
                 </div>
 
+                <div className="projet-image-box" onClick={openPopupboxPreviouslyon}>
+                    <img className="projet-image" src={previouslyon} alt="projet-previouslyon" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
             </div>
 
         </div>
         <PopupboxContainer {...popupboxConfigFreeads} />
         <PopupboxContainer {...popupboxConfigPuissance4} />
         <PopupboxContainer {...popupboxConfigSnapchat} />
-        <PopupboxContainer {...popupboxConfigTweetacademie} />
         <PopupboxContainer {...popupboxConfigEcommerce} />
+        <PopupboxContainer {...popupboxConfigPreviouslyon} />
     </div>
 
 
