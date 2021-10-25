@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.dd09885f.chunk.css",
-    "main.js": "/Portfolio/static/js/main.a2174a2e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.a2174a2e.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.32138a40.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.32138a40.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.b6f7d08d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b6f7d08d.js.map",
     "static/css/2.9f80b03e.chunk.css": "/Portfolio/static/css/2.9f80b03e.chunk.css",
@@ -20,15 +20,15 @@
     "static/media/photo.460b5f90.jpg": "/Portfolio/static/media/photo.460b5f90.jpg",
     "static/media/projet-ecommerce.458ce921.png": "/Portfolio/static/media/projet-ecommerce.458ce921.png",
     "static/media/projet-freeads.e5b19205.png": "/Portfolio/static/media/projet-freeads.e5b19205.png",
+    "static/media/projet-previouslyon.bc5fe0eb.png": "/Portfolio/static/media/projet-previouslyon.bc5fe0eb.png",
     "static/media/projet-puissance4.a8664ce4.png": "/Portfolio/static/media/projet-puissance4.a8664ce4.png",
-    "static/media/projet-snapchat.3c99de5a.png": "/Portfolio/static/media/projet-snapchat.3c99de5a.png",
-    "static/media/projet-tweetacademie.caa70da7.png": "/Portfolio/static/media/projet-tweetacademie.caa70da7.png"
+    "static/media/projet-snapchat.3c99de5a.png": "/Portfolio/static/media/projet-snapchat.3c99de5a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b6f7d08d.js",
     "static/css/2.9f80b03e.chunk.css",
     "static/js/2.f275b9e5.chunk.js",
     "static/css/main.dd09885f.chunk.css",
-    "static/js/main.a2174a2e.chunk.js"
+    "static/js/main.32138a40.chunk.js"
   ]
 }
