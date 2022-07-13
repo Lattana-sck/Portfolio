@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.dd09885f.chunk.css",
-    "main.js": "/Portfolio/static/js/main.32138a40.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.32138a40.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.fdce2033.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.fdce2033.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.b6f7d08d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b6f7d08d.js.map",
     "static/css/2.9f80b03e.chunk.css": "/Portfolio/static/css/2.9f80b03e.chunk.css",
-    "static/js/2.f275b9e5.chunk.js": "/Portfolio/static/js/2.f275b9e5.chunk.js",
-    "static/js/2.f275b9e5.chunk.js.map": "/Portfolio/static/js/2.f275b9e5.chunk.js.map",
+    "static/js/2.0fcdc723.chunk.js": "/Portfolio/static/js/2.0fcdc723.chunk.js",
+    "static/js/2.0fcdc723.chunk.js.map": "/Portfolio/static/js/2.0fcdc723.chunk.js.map",
     "static/js/3.5c8840be.chunk.js": "/Portfolio/static/js/3.5c8840be.chunk.js",
     "static/js/3.5c8840be.chunk.js.map": "/Portfolio/static/js/3.5c8840be.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.9f80b03e.chunk.css.map": "/Portfolio/static/css/2.9f80b03e.chunk.css.map",
     "static/css/main.dd09885f.chunk.css.map": "/Portfolio/static/css/main.dd09885f.chunk.css.map",
-    "static/js/2.f275b9e5.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f275b9e5.chunk.js.LICENSE.txt",
-    "static/media/CV.b3e85c59.pdf": "/Portfolio/static/media/CV.b3e85c59.pdf",
+    "static/js/2.0fcdc723.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.0fcdc723.chunk.js.LICENSE.txt",
+    "static/media/CV.ceb7804b.pdf": "/Portfolio/static/media/CV.ceb7804b.pdf",
     "static/media/App.css": "/Portfolio/static/media/background.7433ee59.jpeg",
+    "static/media/carlab.4d8093c1.png": "/Portfolio/static/media/carlab.4d8093c1.png",
+    "static/media/cryptozombie.c7992c33.jpg": "/Portfolio/static/media/cryptozombie.c7992c33.jpg",
     "static/media/logo.a6f23e54.png": "/Portfolio/static/media/logo.a6f23e54.png",
+    "static/media/opensea.431e5430.png": "/Portfolio/static/media/opensea.431e5430.png",
     "static/media/photo.460b5f90.jpg": "/Portfolio/static/media/photo.460b5f90.jpg",
     "static/media/projet-ecommerce.458ce921.png": "/Portfolio/static/media/projet-ecommerce.458ce921.png",
     "static/media/projet-freeads.e5b19205.png": "/Portfolio/static/media/projet-freeads.e5b19205.png",
@@ -27,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.b6f7d08d.js",
     "static/css/2.9f80b03e.chunk.css",
-    "static/js/2.f275b9e5.chunk.js",
+    "static/js/2.0fcdc723.chunk.js",
     "static/css/main.dd09885f.chunk.css",
-    "static/js/main.32138a40.chunk.js"
+    "static/js/main.fdce2033.chunk.js"
   ]
 }
