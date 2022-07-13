@@ -4,6 +4,9 @@ import puissance4 from '../projet-img/projet-puissance4.png';
 import snapchat from '../projet-img/projet-snapchat.png';
 import ecommerce from '../projet-img/projet-ecommerce.png';
 import previouslyon from '../projet-img/projet-previouslyon.png';
+import openseaclone from '../projet-img/opensea.png';
+import cryptozombie from '../projet-img/cryptozombie.jpg';
+import carlab from '../projet-img/carlab.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -80,7 +83,7 @@ const openPopupboxEcommerce = () => {
             <h3>Ecommerce</h3>
             <img className="projet-image-popupbox" src={ecommerce} alt="Ecommerce projet" />
             <p>Le but de ce projet est de faire un site E-commerce <br />
-                Pouvoir consulter les produits, acheter sans se connecter, s'inscrire...</p>
+                Pouvoir consulter les produits, acheter via Paypal sans se connecter, s'inscrire...</p>
             <p>Langages / Framworks : Symfony / React</p>
             <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Ecommerce")} >https://github.com/Lattana-sck/Ecommerce</a>
         </>
@@ -92,7 +95,7 @@ const popupboxConfigEcommerce = {
     fadeInSpeed: 500
 };
 
-// FREEADS
+// PREVIOUSLYON
 const openPopupboxPreviouslyon = () => {
     const content = (
         <>
@@ -108,6 +111,63 @@ const openPopupboxPreviouslyon = () => {
 };
 
 const popupboxConfigPreviouslyon = {
+    fadeIn: true,
+    fadeInSpeed: 500
+};
+
+// OPENSEACLONE
+const openPopupboxOpenseaclone = () => {
+    const content = (
+        <>
+            <h3>OpenSea Clone</h3>
+            <img className="projet-image-popupbox" src={openseaclone} alt="OpenSea_Clone projet" />
+            <p>Le but de ce projet est de crée une marketplace d'NFTs</p>
+            <p>Langages / Framworks : Next.js / Sanity.io</p>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/OpenSeaClone")} >https://github.com/Lattana-sck/OpenSeaClone</a>
+        </>
+    )
+    PopupboxManager.open({ content })
+};
+
+const popupboxConfigOpenseaclone = {
+    fadeIn: true,
+    fadeInSpeed: 500
+};
+
+// CRYPTOZOMBIE
+const openPopupboxCryptoZombie = () => {
+    const content = (
+        <>
+            <h3>CryptoZombies</h3>
+            <img className="projet-image-popupbox" src={cryptozombie} alt="cryptozombie projet" />
+            <p>Le but de ce projet est de s'initier au web3 avec les smarts contracts</p>
+            <p>Langages / Framworks : Javascript / Solidity</p>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/CryptoZombie")} >https://github.com/Lattana-sck/CryptoZombie</a>
+        </>
+    )
+    PopupboxManager.open({ content })
+};
+
+const popupboxConfigCryptoZombie = {
+    fadeIn: true,
+    fadeInSpeed: 500
+};
+
+// Carlab
+const openPopupboxCarlab = () => {
+    const content = (
+        <>
+            <h3>Carlab</h3>
+            <img className="projet-image-popupbox" src={carlab} alt="carlab projet" />
+            <p>Le but de ce projet est de crée une web app permettant de mettre en relation les commerciaux et les particuliers souhaitant vendre leurs véhicules.</p>
+            <p>Langages / Framworks : HTML / CSS / PHP / LARAVEL</p>
+            <b>GitHub :</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Lattana-sck/Carlab")} >https://github.com/Lattana-sck/Carlab</a>
+        </>
+    )
+    PopupboxManager.open({ content })
+};
+
+const popupboxConfigCarlab = {
     fadeIn: true,
     fadeInSpeed: 500
 };
@@ -149,6 +209,21 @@ const Projets =
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
                 </div>
+                <div className="projet-image-box" onClick={openPopupboxOpenseaclone}>
+                    <img className="projet-image" src={openseaclone} alt="openseaclone" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
+                <div className="projet-image-box" onClick={openPopupboxCryptoZombie}>
+                    <img className="projet-image" src={cryptozombie} alt="projet-CryptoZombie" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
+                <div className="projet-image-box" onClick={openPopupboxCarlab}>
+                    <img className="projet-image" src={carlab} alt="projet-freeads" />
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="projet-icon" icon={faSearchPlus} />
+                </div>
             </div>
 
         </div>
@@ -157,6 +232,9 @@ const Projets =
         <PopupboxContainer {...popupboxConfigSnapchat} />
         <PopupboxContainer {...popupboxConfigEcommerce} />
         <PopupboxContainer {...popupboxConfigPreviouslyon} />
+        <PopupboxContainer {...popupboxConfigOpenseaclone} />
+        <PopupboxContainer {...popupboxConfigCryptoZombie} />
+        <PopupboxContainer {...popupboxConfigCarlab} />
     </div>
 
 
